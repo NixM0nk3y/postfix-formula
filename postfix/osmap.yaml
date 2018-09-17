@@ -5,6 +5,7 @@ Debian:
   policyd_spf_pkg: postfix-policyd-spf-python
   pcre_pkg: postfix-pcre
   mysql_pkg: postfix-mysql
+  ldap_pkg: postfix-ldap
 
 FreeBSD:
   policyd_spf_pkg: py27-postfix-policyd-spf-python
