@@ -8,7 +8,7 @@
     defaults,
     merge=salt['grains.filter_by'](
         osmap,
-        grain='os',
+        grain='os_family',
         merge=salt['pillar.get']('postfix:lookup', {}),
     ),
     base='postfix')
