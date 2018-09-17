@@ -122,8 +122,8 @@ y
 # maildrop. See the Postfix MAILDROP_README file for details.
 # Also specify in main.cf: maildrop_destination_recipient_limit=1
 #
-#maildrop  unix  -       n       n       -       -       pipe
-#  flags=DRhu user=vmail argv=/usr/local/bin/maildrop -d ${recipient}
+maildrop  unix  -       n       n       -       -       pipe
+  flags=DRhu user=vmail argv=/usr/bin/maildrop /etc/maildroprc ${mailbox} ${recipient}
 #
 # ====================================================================
 #
