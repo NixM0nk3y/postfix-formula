@@ -52,7 +52,7 @@
 {%- set relay_restrictions = ['permit_mynetworks'] %}
 {%- set recipient_restrictions = ['permit_mynetworks'] %}
 
-{%- if config.get('smtpd_sasl_auth_enable', 'yes') == 'yes' %}
+{%- if config.get('smtpd_sasl_auth_enable', 'no') == 'yes' %}
 # SASL parameters (http://www.postfix.org/SASL_README.html)
 {%- do relay_restrictions.append('permit_sasl_authenticated') %}
 {%- do recipient_restrictions.append('permit_sasl_authenticated') %}
